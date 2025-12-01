@@ -17,8 +17,8 @@ import { LuHandCoins, LuWalletMinimal } from "react-icons/lu";
 import { IoMdCard } from "react-icons/io";
 import { addThousandsSeparator } from "../../utils/helper";
 
-const Home = () => {
-  useUserAuth();
+ const Home = () => {
+   useUserAuth();
 
   const navigate = useNavigate();
 
@@ -64,7 +64,7 @@ const Home = () => {
 
          <InfoCard
           icon={<LuWalletMinimal />}
-          label="Total Income/Allowance"
+          label="Total Funds"
           value={addThousandsSeparator(dashboardData?.totalIncome || 0)}
           color="bg-orange-500"
         />

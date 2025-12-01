@@ -23,7 +23,7 @@ const AddIncomeForm = ({onAddIncome}) => {
         <Input
             value={income.source}
             onChange={({ target }) => handleChange("source", target.value)}
-            label="Income/Allowance Source"
+            label="Funds Source"
             placeholder="Freelance, Salary, etc"
             type="text"
         />
@@ -50,7 +50,7 @@ const AddIncomeForm = ({onAddIncome}) => {
                 className="add-btn add-btn-fill"
                 onClick={()=>onAddIncome(income)}
             >
-                Add Income/Allowance
+                Add Funds
             </button>
         </div>
     </div>
